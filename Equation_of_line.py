@@ -1,5 +1,14 @@
 from numpy import ones, vstack;from numpy.linalg import lstsq;
-points=[(-3,0),(0,2)]
+print('Enter Coordinates for A, B, C and D such that quadrilateral ABCD has the base AB')
+Ax=float(input('Enter Ax '));
+Ay=float(input('Enter Ay '));
+Bx=float(input('Enter Bx '));
+By=float(input('Enter By '));
+Cx=float(input('Enter Cx '));
+Cy=float(input('Enter Cy '));
+Dx=float(input('Enter Dx '))
+Dy=float(input('Enter Dy '))
+points=[((Ax+Bx)/2,(Ay+By)/2),((Cx+Dx)/2,(Cy+Dy)/2)]
 x,y=zip(*points)
 a=1;b=1
 try:
